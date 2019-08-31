@@ -1,3 +1,6 @@
 {
-    "python.pythonPath": "/Users/edderleonardo/.local/share/virtualenvs/recipe-app-api-tdd-j_xjeFxe/bin/python"
+    "python.pythonPath": "/home/edderleonardo/.local/share/virtualenvs/recipe-app-api-tdd-wKbxyIHe/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.pep8Enabled": true,
+    "python.linting.enabled": true
 }
