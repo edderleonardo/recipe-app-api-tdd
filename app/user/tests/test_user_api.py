@@ -10,6 +10,7 @@ CREATE_USER_URL = reverse('user:create')
 
 
 def create_user(**params):
+    """Helper function to create new user"""
     return get_user_model().objects.create_user(**params)
 
 
@@ -30,9 +31,7 @@ class PublicUserApiTests(TestCase):
 
         self.assertEqual(res.status_code, status.HTTP_201_CREATED)
         user = get_user_model().objects.get(**res.data)
-        self.assertTrue(
-            user.check_password(payload['password'])
-        )
+        self.assertTrue(user.check_password(payload['password']))
         self.assertNotIn('password', res.data)
 
     def test_user_exists(self):
