@@ -10,7 +10,7 @@ pep8 = "*"
 [packages]
 djangorestframework = ">=3.9.1"
 flake8 = ">=3.6.0,<3.7.0"
-Django = "<2.2.0,>=2.1.0"
+Django = ">=2.1.0,<2.3.0"
 
 [requires]
 python_version = "3.7"
